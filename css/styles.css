@@ -1,3 +1,7 @@
 body{
-    background-color: red;
+    
+}
+
+.container_ci {
+    border-bottom: solid 5px #2a73be;
 }
