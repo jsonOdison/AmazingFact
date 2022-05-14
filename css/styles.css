@@ -4,15 +4,15 @@ body{
 
 .container_ci_content {
     border-bottom: solid 4px #adcff2;
-    height: 500px;
-    background:linear-gradient(right )
+    height:80vh;
+    background-color: #d4e5f6;
 }
 
 .articles {
     background: linear-gradient(hsl(233, 26%, 24%) ,hsl(0, 0%, 0%));
     position: relative;
     left: 10%;
-    margin-top: 2em;
+   top:10%;
     }
     
     .article
