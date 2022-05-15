@@ -182,7 +182,7 @@ a {
 }
 /* container */
 
-.container{
+/* .container{
     
     border-radius: 20px;
     margin-top: 41%;
@@ -195,9 +195,15 @@ a {
         "header header"
         "sidebar main"
         ;
+<<<<<<< HEAD
+    grid-gap: 50px;
+        background-color: #fff;
+} */
+=======
     grid-gap: 50px; */
     background-color:rgb(224, 227, 229);
 }
+>>>>>>> a253b87238ae951c0c70ae5b49676c09356eb668
 
 /* Header */
 
@@ -274,22 +280,28 @@ a {
     }
 }
 
-
+/* Content Container */
 .container_ci_content {
-    border-bottom: solid 4px #adcff2;
-    height: 500px;
-    background:linear-gradient(right )
+
+    height:80vh;
+    background-color: #d4e5f6; 
 }
 
+<<<<<<< HEAD
+
+/* Cards */
+=======
 .card-container{
     margin-left: 7%;
 }
 
+>>>>>>> a253b87238ae951c0c70ae5b49676c09356eb668
 .articles {
     background: linear-gradient(hsl(233, 26%, 24%) ,hsl(0, 0%, 0%));
     /* position: relative; */
     left: 10%;
-    margin-top: 2em;
+   top:10%;
+   border-bottom: solid lightblue 4px;
     }
     
     .article
@@ -347,3 +359,9 @@ a {
             font-size: 0.8125rem;
         }
     
+/* Cards 3 in one */
+        .container_ci_content_gl{
+            display: grid;
+            grid:
+        'article1 article2 article3';
+        }
