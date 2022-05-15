@@ -4,9 +4,9 @@
 
 /* CSS variables */
 :root{
-    --primary:#ddd;
-    --dark:#333;
-    --light:#fff;
+    --primary:rgb(164, 160, 160);
+    --dark:rgb(149, 152, 153);
+    --light:rgb(209, 183, 183);
     --shadow:0 1px 5px rgba(104,104,104,0.8);
     --palette-color-1: rgb(0, 0, 0);
     --palette-color-2: rgba(0, 0, 0, 0);
@@ -41,23 +41,91 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
-    background-color: rgba(214, 211, 211, 0.579);
+    background-color: rgb(255, 255, 255);
     margin:30px 50px;
     line-height: 1.4;
 }
+nav {
 
+    display: flex;
+    margin:0px;
+    justify-content: space-around; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 8vh;
+    background-color: teal;
+    font-family: 'Robotic', sans-serif;
+  }
+  
+  .heading {
+  
+    color: white;
+  
+    text-transform: uppercase;
+  
+    letter-spacing: 5px;
+  
+    font-size: 20px;
+  
+  }
+  
+  .nav-links {
+  
+    display: flex;
+  
+    justify-content: space-around;
+  
+    width: 30%;
+  
+  }
+  
+  .nav-links li {
+  
+    list-style: none;
+  
+  }
+  
+  .nav-links a {
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    letter-spacing: 3px;
+  
+    font-weight: bold;
+  
+    font-size: 14px;
+  
+    padding: 14px 16px;
+  
+  }
+  
+  .nav-links a:hover:not(.active) {
+  
+    background-color: lightseagreen;
+  
+  }
+  
+  .nav-links li a.active {
+  
+    background-color: #4caf50;
+  
+  }
 
 /* header container */
 
 .header-container {
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     padding: 10px;
     background-color: rgb(235, 242, 248);
     border-bottom: 4px solid rgb(55, 120, 187);
@@ -75,6 +143,10 @@ h1 {
     font-size: 50px;
     margin-bottom: 0;
     font-family: "Noto Sans", sans-serif;
+}
+h3{
+    font-family: "Noto Sans", sans-serif;
+    color: #50c6db;
 }
 /* end of header container */
 
@@ -94,7 +166,7 @@ a {
     text-decoration: none;
 }
 .content li{
-    font-size: 24px;
+    font-size: 19px;
     word-spacing: 1.5px;
     letter-spacing: 2.6px;
     line-height: 72px;
@@ -112,20 +184,26 @@ a {
 
 /* .container{
     
-    
+    border-radius: 20px;
     margin-top: 41%;
     max-width: 1210px;
     margin: 0 auto;
     padding: 0 60px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
         "header header"
         "sidebar main"
         ;
+<<<<<<< HEAD
     grid-gap: 50px;
         background-color: #fff;
 } */
+=======
+    grid-gap: 50px; */
+    background-color:rgb(224, 227, 229);
+}
+>>>>>>> a253b87238ae951c0c70ae5b49676c09356eb668
 
 /* Header */
 
@@ -156,10 +234,22 @@ a {
 /* Sidebar */
 
 .sidebar {
+    
+    width: 15%;
+    position: absolute;
     grid-area: sidebar;
     padding: 20px;
-    border-top: 3px solid #693f7e;
-    background-color: #f9f9f9;
+    border-top: 6px solid #693f7e;
+    background-color: #ffffff;
+}
+.sidebar_animal{
+    top:52%;
+}
+.sidebar_places{
+    top:97%;
+}
+.sidebar_food{
+    top:142%;
 }
 
 .sidebar ul {
@@ -197,11 +287,18 @@ a {
     background-color: #d4e5f6; 
 }
 
+<<<<<<< HEAD
 
 /* Cards */
+=======
+.card-container{
+    margin-left: 7%;
+}
+
+>>>>>>> a253b87238ae951c0c70ae5b49676c09356eb668
 .articles {
     background: linear-gradient(hsl(233, 26%, 24%) ,hsl(0, 0%, 0%));
-    position: relative;
+    /* position: relative; */
     left: 10%;
    top:10%;
    border-bottom: solid lightblue 4px;
@@ -215,10 +312,9 @@ a {
     .article__grid {
             display: grid;
             gap: 1.875rem;
-            /* grid-template-columns: repeat(4, 1fr); */
-           
+            /* grid-template-columns: repeat(3, 1fr); */
             float: left;
-            width: 25%;
+            width: 30%; 
             padding: 0 10px;
               
         }
