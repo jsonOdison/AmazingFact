@@ -1,19 +1,45 @@
 /*//////////////////////////////////////////////////// Card main Content ///////////////////////////////////////////////////*/
+:root{
+    --text-header:#222222;
+    --text-paragraph:#716e6e;
+    --background-container:rgb(255,255,255);
+    --right-item-container:rgb(241, 239, 239);
+}
 body,html{
+    height: 100%;
+    width: 100%;
     margin: 0;
+    background-color: rgb(235, 242, 248) ;
+}
+.body-container{
+    height: 100%;
+    width: 100%;
 }
 
-.heading {
-  
-    color: white;
-  
-    text-transform: uppercase;
-  
-    letter-spacing: 5px;
-  
-    font-size: 20px;
-  
-  }
+.text-content{
+    padding-top: 40%;
+    
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 40px;
+    height: 100%;
+}
+
+.left-content{
+    width:50%;
+    height: 100%;
+    float:left;
+    overflow: hidden;
+    font-size: large;
+    vertical-align: middle;
+    /* padding-top: 10px; */
+}
+
+.right-content{
+    width:50%;
+    height: 100%;
+    float:right;  
+}
 nav {
 
     display: flex;
@@ -28,7 +54,7 @@ nav {
   
     min-height: 8vh;
   
-    background-color: teal;
+    background-color: #227093;
   
     font-family: 'Robotic', sans-serif;
   
@@ -74,45 +100,24 @@ nav {
   
   .nav-links li a.active {
   
-    background-color: #4caf50;
+    background-color: #1b5874;
   
   }
 
-:root{
-    --text-header:#222222;
-    --text-paragraph:#716e6e;
-    --background-container:rgb(255,255,255);
-    --right-item-container:rgb(241, 239, 239);
-}
-body{
-    font-family: 'Quicksand', sans-serif;
-    background-color: #EBEBEB;
-}
+
 .body-content{
     width: 74%;
     margin: 0 auto;
     background-color: #EBEBEB;
 }
-nav {
-    display: flex;
-    margin:0px;
-    padding: 0%;
-    justify-content: space-around; 
-    align-items: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background:linear-gradient(100deg,rgb(3, 118, 67),rgb(0, 71, 76));
-    font-family: 'Robotic', sans-serif;
-    border-radius: 5px 5px 0px 0px;
-  }
+
   
   .heading {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 20px;
     display: flex;
+    letter-spacing: 5px;
   }
   .heading:hover{
      color: rgb(255, 255, 255);
@@ -120,53 +125,14 @@ nav {
      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
      padding: auto;
   }
-  .nav-links {
-    font-size: 30px;
-    display:flex;
-    transition: all 0.4s ease 0s;
-    text-transform: uppercase;
-    justify-content: space-around;
-    width: 50%;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  
-  .nav-links a {
-    color:whitesmoke;
-    text-decoration: none;
-    border-radius: 10px;
-    letter-spacing:0;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 15px 15px ;
-  }
-  .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.617);
-    opacity: 100%;
-    padding: 20px;
-    font-size: 20px;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .nav-links:hover{
-      opacity: 100%;
-  }
-  
-  .nav-links li a.active {
-    background-color: #4caf50;
-  }
-
 .header-container {
     margin-bottom: 2%;
-    padding: 10px;
     background-color: rgb(235, 242, 248);
-    border-bottom: 4px solid rgb(55, 120, 187);
+    border-bottom: 4px solid #e72929;
 }
 
 .header-inside-container {
-    padding: 40px 20px;
-    padding: 60px 0;
+    padding: 18px 0;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -258,9 +224,15 @@ nav {
 }
 
 .fact-article-container img{
-    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 69%;
+    margin:0px 0 20px 87px;
 }
-
+#fact-article-container-header-pic{
+    
+    margin: 0;
+    width: 100% !important;
+}
 .right-content-container h4,.right-content-container-item h4 {
     font-family: Quicksand, sans-serif;
     font-weight: 700;
@@ -281,21 +253,24 @@ nav {
 
 h1 {
     font-family: 'Quicksand', sans-serif;
-   
+    text-align: center;
+
    
     display: block;
    
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: 700 !important;
-    line-height: 75px;
-    font-size: 60px;
+    line-height: 25px;
+    font-size: 40px;;
+    
     color:  --text-header;
 
 }
 h2{
+    font-size: 30px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     line-height: 38px;
@@ -336,7 +311,7 @@ p{
 
 .t-image-container-links{
     height: 80px;
-    width: 85px;
+    width: 89px;
 }
 .t-text-container{
    

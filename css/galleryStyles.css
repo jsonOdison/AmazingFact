@@ -1,0 +1,71 @@
+body,html{
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+   
+   
+    display: block;
+   
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 700 !important;
+    line-height: 75px;
+    font-size: 60px;
+    color:  --text-header;
+
+}
+
+.header-container {
+    margin-bottom: 2%;
+    padding: 10px;
+    background-color: rgb(235, 242, 248);
+    border-bottom: 4px solid rgb(55, 120, 187);
+}
+
+.header-inside-container {
+    padding: 20px 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.gallery-content{
+    padding: 50px 0;
+}
+
+.gallery-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
