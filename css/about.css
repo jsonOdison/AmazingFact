@@ -1,0 +1,190 @@
+:root{
+    --text-header:#222222;
+    --text-paragraph:#716e6e;
+    --background-container:rgb(255,255,255);
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(235, 242, 248) ;
+}
+.body-container{
+    height: 100%;
+}
+
+.text-content{
+    padding-top: 40%;
+    padding-bottom: 40%;
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 40px;
+}
+
+.left-content{
+    width:50%;
+    height: 100%;
+    float:left;
+    overflow: hidden;
+    font-size: large;
+    vertical-align: middle;
+    /* padding-top: 10px; */
+}
+
+.right-content{
+    width:50%;
+    height: 100%;
+    float:right;  
+}
+nav {
+
+    display: flex;
+    margin:0px;
+  
+    justify-content: space-around;
+  
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    min-height: 8vh;
+  
+    background-color: teal;
+  
+    font-family: 'Robotic', sans-serif;
+  
+  }
+
+  .nav-links {
+  
+    display: flex;
+  
+    justify-content: space-around;
+  
+    width: 30%;
+  
+  }
+  
+  .nav-links li {
+  
+    list-style: none;
+  
+  }
+  
+  .nav-links a {
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    letter-spacing: 3px;
+  
+    font-weight: bold;
+  
+    font-size: 14px;
+  
+    padding: 14px 16px;
+  
+  }
+  
+  .nav-links a:hover:not(.active) {
+  
+    background-color: lightseagreen;
+  
+  }
+  
+  .nav-links li a.active {
+  
+    background-color: #4caf50;
+  
+  }
+  .header-container {
+    margin-bottom: 2%;
+    padding: 10px;
+    background-color: rgb(235, 242, 248);
+    border-bottom: 4px solid rgb(55, 120, 187);
+}
+.header-inside-container {
+    padding: 40px 20px;
+    padding: 60px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+}
+h1 {
+    font-family: 'Quicksand', sans-serif;
+   
+   
+    display: block;
+   
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 700 !important;
+    line-height: 75px;
+    font-size: 60px;
+    color: var(--text-header);
+
+}
+.heading {
+  
+    color: white;
+  
+    text-transform: uppercase;
+  
+    letter-spacing: 5px;
+  
+    font-size: 20px;
+  
+  }
+  /*///////////////////////// FLIP CARDS /////////////////////////////*/
+.body_cards{
+    width: 100%;
+    margin: 0 50px;
+}
+ .flip-card {
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
