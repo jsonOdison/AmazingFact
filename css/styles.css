@@ -180,14 +180,6 @@ a {
     margin-left: 19%;
     border-radius: 10px;
 }
-/* container */
-
-
-
-/* Header */
-
-
-/* Main Section */
 
 .main {
     grid-area: main;
@@ -259,22 +251,19 @@ a {
     }
 }
 
-
+/* Content Container */
 .container_ci_content {
-    border-bottom: solid 4px #adcff2;
-    height: 500px;
-    background:linear-gradient(right )
-}
 
-.card-container{
-    margin-left: 7%;
+    height:80vh;
+    background-color: #d4e5f6; 
 }
 
 .articles {
     background: linear-gradient(hsl(233, 26%, 24%) ,hsl(0, 0%, 0%));
     /* position: relative; */
     left: 10%;
-    margin-top: 2em;
+   top:10%;
+   border-bottom: solid lightblue 4px;
     }
     
     .article
@@ -331,71 +320,4 @@ a {
         .article__description {
             font-size: 0.8125rem;
         }
-    
-/*//////////////////////////////////////////////////// Card main Content ///////////////////////////////////////////////////*/
 
-.heading-container{
-    background-color: #afc9e4;
-    margin-bottom: 15px;
-}
-
-.body-container{
-    margin: 0 7%;
-    width: 100%;
-}
-
-.float-left-container{
-    background-color: #afc9e4;
-    width: 74%;
-    display: inline-flex;
-    /* height: 100vh; */
-    margin-bottom: 15px;
-    margin-right: 10px;
-}
-
-.float-right-container{
-    background-color: #afc9e4;
-    width:25%;
-    float: right;
-    /* overflow:auto; */
-    /* margin-bottom: 15px; */
-}
-
-.fact-container{
-    /* height:15px; */
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.fact-image{
-    height: 75px;
-    width: 75px;
-    background-color: blue;
-    display: inline-block;
-}
-
-.fact-text{
-    /* display: inline-flex;
-    text-align: justify;
-     */
-     padding: 40px 20px;
-    padding: 60px 0;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    position: ABSOLUTE;
-    TOP: 37%;
-    LEFT: 11%;
-    color: white;
-}
-
-.pic-main-content{
-    width: 100%;
-}
-
-.right-content-container{
-    background-color: #afc9e4;
-    height:150px;
-    margin-bottom: 15px;
-}
