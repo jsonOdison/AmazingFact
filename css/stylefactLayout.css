@@ -1,11 +1,91 @@
 /*//////////////////////////////////////////////////// Card main Content ///////////////////////////////////////////////////*/
+body,html{
+    margin: 0;
+}
+
+.heading {
+  
+    color: white;
+  
+    text-transform: uppercase;
+  
+    letter-spacing: 5px;
+  
+    font-size: 20px;
+  
+  }
+nav {
+
+    display: flex;
+    margin:0px;
+  
+    justify-content: space-around;
+  
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    min-height: 8vh;
+  
+    background-color: teal;
+  
+    font-family: 'Robotic', sans-serif;
+  
+  }
+
+  .nav-links {
+  
+    display: flex;
+  
+    justify-content: space-around;
+  
+    width: 30%;
+  
+  }
+  
+  .nav-links li {
+  
+    list-style: none;
+  
+  }
+  
+  .nav-links a {
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    letter-spacing: 3px;
+  
+    font-weight: bold;
+  
+    font-size: 14px;
+  
+    padding: 14px 16px;
+  
+  }
+  
+  .nav-links a:hover:not(.active) {
+  
+    background-color: lightseagreen;
+  
+  }
+  
+  .nav-links li a.active {
+  
+    background-color: #4caf50;
+  
+  }
 
 :root{
     --text-header:#222222;
     --text-paragraph:#716e6e;
     --background-container:rgb(255,255,255);
+    --right-item-container:rgb(241, 239, 239);
 }
 body{
+    font-family: 'Quicksand', sans-serif;
     background-color: #EBEBEB;
 }
 .body-content{
@@ -137,7 +217,7 @@ nav {
 }
 
 .fact-text{
-    font-family: 'Quicksand', sans-serif;
+   
     display: inline-block;
     vertical-align: middle;
     font-weight: 700;
@@ -157,6 +237,20 @@ nav {
     margin-bottom: 15px;
     padding: 20px;
     height: 113px;
+    width: 129%;
+
+}
+.right-content-container-item{
+    background-color: var(--background-container);
+    margin-bottom: 15px;
+    padding: 20px;
+    
+    width: 129%;
+}
+.right-content-container-links a{
+    color: #ee5b5b;
+    font-size: 24px;
+    margin-left: 10px;
 }
 .fact-article-container{
     background-color: var(--background-container);
@@ -167,7 +261,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.right-content-container h4 {
+.right-content-container h4,.right-content-container-item h4 {
     font-family: Quicksand, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -175,6 +269,16 @@ nav {
     margin-bottom: 34px ;
     margin-top: 0;
 }
+
+.right-content-container h4:after,.right-content-container-item h4::after {
+   
+    content: "";
+    display: block;
+    background-color: rgba(59,130,246,.5);
+    height: 5px;
+    width: 50px;
+}
+
 h1 {
     font-family: 'Quicksand', sans-serif;
    
@@ -197,14 +301,7 @@ h2{
     line-height: 38px;
     color: var(--text-header);
 }
-h4:after {
-   
-    content: "";
-    display: block;
-    background-color: rgba(59,130,246,.5);
-    height: 5px;
-    width: 50px;
-}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -220,4 +317,30 @@ p{
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-color: var(--grey);
+}
+
+.t-container{
+    background-color: var(--right-item-container);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.t-image-container{
+   
+    width: 24%;
+    display: inline-block;
+    vertical-align: middle;
+
+    height: 100%;
+}
+
+.t-image-container-links{
+    height: 80px;
+    width: 85px;
+}
+.t-text-container{
+   
+    width: 74%;
+    display: inline-block;
+    vertical-align: middle;
 }
