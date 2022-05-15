@@ -12,72 +12,7 @@ body,html{
     letter-spacing: 5px;
   
     font-size: 20px;
-  
   }
-nav {
-
-    display: flex;
-    margin:0px;
-  
-    justify-content: space-around;
-  
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  
-    min-height: 8vh;
-  
-    background-color: teal;
-  
-    font-family: 'Robotic', sans-serif;
-  
-  }
-
-  .nav-links {
-  
-    display: flex;
-  
-    justify-content: space-around;
-  
-    width: 30%;
-  
-  }
-  
-  .nav-links li {
-  
-    list-style: none;
-  
-  }
-  
-  .nav-links a {
-  
-    color: white;
-  
-    text-decoration: none;
-  
-    letter-spacing: 3px;
-  
-    font-weight: bold;
-  
-    font-size: 14px;
-  
-    padding: 14px 16px;
-  
-  }
-  
-  .nav-links a:hover:not(.active) {
-  
-    background-color: lightseagreen;
-  
-  }
-  
-  .nav-links li a.active {
-  
-    background-color: #4caf50;
-  
-  }
-
 :root{
     --text-header:#222222;
     --text-paragraph:#716e6e;
@@ -103,16 +38,15 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
-    background:linear-gradient(100deg,rgb(3, 118, 67),rgb(0, 71, 76));
+    background:linear-gradient(100deg,rgb(0, 126, 223),rgb(0, 71, 76));
     font-family: 'Robotic', sans-serif;
-    border-radius: 5px 5px 0px 0px;
   }
   
   .heading {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 20px;
-    display: flex;
+    display:flex;
   }
   .heading:hover{
      color: rgb(255, 255, 255);
@@ -135,7 +69,7 @@ nav {
   
   .nav-links a {
     color:whitesmoke;
-    text-decoration: none;
+    text-decoration:none;
     border-radius: 10px;
     letter-spacing:0;
     font-weight: bold;
@@ -145,7 +79,7 @@ nav {
   .nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.617);
     opacity: 100%;
-    padding: 20px;
+    padding: 15px;
     font-size: 20px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
