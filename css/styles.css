@@ -49,7 +49,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
     background-color: rgb(255, 255, 255);
-    margin:30px 50px;
+  
     line-height: 1.4;
 }
 nav {
@@ -130,7 +130,6 @@ nav {
     margin-bottom: 2%;
     padding: 10px;
     background-color: rgb(235, 242, 248);
-    border-bottom: 4px solid rgb(55, 120, 187);
 }
 .header-inside-container {
     padding: 40px 20px;
@@ -253,6 +252,9 @@ a {
     }
 }
 
+.card-container {
+    margin:30px 50px;
+}
 /* Content Container */
 .container_ci_content {
 
@@ -265,7 +267,7 @@ a {
     /* position: relative; */
     left: 10%;
    top:10%;
-   border-bottom: solid lightblue 4px;
+
     }
     
     .article
@@ -322,4 +324,15 @@ a {
         .article__description {
             font-size: 0.8125rem;
         }
-
+/* Yeff Style */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8FF;
+    border-bottom: #92dce9 2px solid;
+    margin-bottom:20px;
+}
+.container::after {
+    margin-bottom: 30px;
+}
