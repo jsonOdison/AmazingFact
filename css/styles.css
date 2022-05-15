@@ -4,9 +4,9 @@
 
 /* CSS variables */
 :root{
-    --primary:#ddd;
-    --dark:#333;
-    --light:#fff;
+    --primary:rgb(164, 160, 160);
+    --dark:rgb(149, 152, 153);
+    --light:rgb(209, 183, 183);
     --shadow:0 1px 5px rgba(104,104,104,0.8);
     --palette-color-1: rgb(0, 0, 0);
     --palette-color-2: rgba(0, 0, 0, 0);
@@ -41,14 +41,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
-    background-color: rgba(214, 211, 211, 0.579);
+    background-color: rgb(255, 255, 255);
     margin:30px 50px;
     line-height: 1.4;
 }
@@ -144,6 +144,10 @@ h1 {
     margin-bottom: 0;
     font-family: "Noto Sans", sans-serif;
 }
+h3{
+    font-family: "Noto Sans", sans-serif;
+    color: #50c6db;
+}
 /* end of header container */
 
 
@@ -162,7 +166,7 @@ a {
     text-decoration: none;
 }
 .content li{
-    font-size: 24px;
+    font-size: 19px;
     word-spacing: 1.5px;
     letter-spacing: 2.6px;
     line-height: 72px;
@@ -180,19 +184,19 @@ a {
 
 .container{
     
-    
+    border-radius: 20px;
     margin-top: 41%;
     max-width: 1210px;
     margin: 0 auto;
     padding: 0 60px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
         "header header"
         "sidebar main"
         ;
-    grid-gap: 50px;
-        background-color: #fff;
+    grid-gap: 50px; */
+    background-color:rgb(224, 227, 229);
 }
 
 /* Header */
@@ -224,10 +228,22 @@ a {
 /* Sidebar */
 
 .sidebar {
+    
+    width: 15%;
+    position: absolute;
     grid-area: sidebar;
     padding: 20px;
-    border-top: 3px solid #693f7e;
-    background-color: #f9f9f9;
+    border-top: 6px solid #693f7e;
+    background-color: #ffffff;
+}
+.sidebar_animal{
+    top:52%;
+}
+.sidebar_places{
+    top:97%;
+}
+.sidebar_food{
+    top:142%;
 }
 
 .sidebar ul {
@@ -265,9 +281,13 @@ a {
     background:linear-gradient(right )
 }
 
+.card-container{
+    margin-left: 7%;
+}
+
 .articles {
     background: linear-gradient(hsl(233, 26%, 24%) ,hsl(0, 0%, 0%));
-    position: relative;
+    /* position: relative; */
     left: 10%;
     margin-top: 2em;
     }
@@ -280,10 +300,9 @@ a {
     .article__grid {
             display: grid;
             gap: 1.875rem;
-            /* grid-template-columns: repeat(4, 1fr); */
-           
+            /* grid-template-columns: repeat(3, 1fr); */
             float: left;
-            width: 25%;
+            width: 30%; 
             padding: 0 10px;
               
         }
