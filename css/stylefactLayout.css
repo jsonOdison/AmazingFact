@@ -6,34 +6,58 @@
     --right-item-container:rgb(241, 239, 239);
 }
 body,html{
-    margin:0;
-    font-family: 'Quicksand', sans-serif;
-    background-color: #EBEBEB;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(235, 242, 248) ;
 }
-.heading {
-  
-    color: white;
-  
-    text-transform: uppercase;
-  
-    letter-spacing: 5px;
-  
-    font-size: 20px;
-  
-  }
-  nav {
+.body-container{
+    height: 100%;
+    width: 100%;
+}
+
+.text-content{
+    padding-top: 40%;
+    
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 40px;
+    height: 100%;
+}
+
+.left-content{
+    width:50%;
+    height: 100%;
+    float:left;
+    overflow: hidden;
+    font-size: large;
+    vertical-align: middle;
+    /* padding-top: 10px; */
+}
+
+.right-content{
+    width:50%;
+    height: 100%;
+    float:right;  
+}
+nav {
+
     display: flex;
     margin:0px;
-    padding: 0%;
-    justify-content: space-around; 
+  
+    justify-content: space-around;
+  
     align-items: center;
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 100;
-    background-color:#227093;
+  
+    min-height: 8vh;
+  
+    background-color: #227093;
+  
     font-family: 'Robotic', sans-serif;
-    border-radius: 5px 5px 0px 0px;
+  
   }
 
   .nav-links {
@@ -76,10 +100,9 @@ body,html{
   
   .nav-links li a.active {
   
-    /* background-color: #4caf50; */
+    background-color: #1b5874;
   
   }
-
 
 
 .body-content{
@@ -94,6 +117,7 @@ body,html{
     text-transform: uppercase;
     font-size: 20px;
     display: flex;
+    letter-spacing: 5px;
   }
   .heading:hover{
      color: rgb(255, 255, 255);
@@ -101,43 +125,6 @@ body,html{
      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
      padding: auto;
   }
-  .nav-links {
-    font-size: 30px;
-    display:flex;
-    transition: all 0.4s ease 0s;
-    text-transform: uppercase;
-    justify-content: space-around;
-    width: 50%;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  
-  .nav-links a {
-    color:whitesmoke;
-    text-decoration: none;
-    border-radius: 10px;
-    letter-spacing:0;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 15px 15px ;
-  }
-  .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.617);
-    opacity: 100%;
-    padding: 20px;
-    font-size: 20px;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .nav-links:hover{
-      opacity: 100%;
-  }
-  
-  .nav-links li a.active {
-    /* background-color: #4caf50; */
-  }
-
 .header-container {
     margin-bottom: 2%;
     background-color: rgb(235, 242, 248);
