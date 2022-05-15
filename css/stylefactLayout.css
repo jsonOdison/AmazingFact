@@ -31,35 +31,39 @@ body{
 nav {
     display: flex;
     margin:0px;
-    padding: 0%;
-    justify-content: space-around; 
+    padding: 0px;
+    height: 65px;
+    justify-content:space-around;
     align-items: center;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
-    background:linear-gradient(100deg,rgb(0, 126, 223),rgb(0, 71, 76));
+    background:linear-gradient(100deg,rgb(2, 68, 119),rgb(0, 71, 76));
     font-family: 'Robotic', sans-serif;
   }
   
   .heading {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
     display:flex;
   }
   .heading:hover{
      color: rgb(255, 255, 255);
      opacity: 65%;
      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-     padding: auto;
+     padding: 0px;
   }
   .nav-links {
     font-size: 30px;
     display:flex;
+    padding: 0px;
     transition: all 0.4s ease 0s;
     text-transform: uppercase;
-    justify-content: space-around;
+    justify-content:right;
     width: 50%;
   }
   
@@ -70,17 +74,19 @@ nav {
   .nav-links a {
     color:whitesmoke;
     text-decoration:none;
-    border-radius: 10px;
-    letter-spacing:0;
+    border-radius: 15px;
+    letter-spacing:0px;
+    word-spacing: 0px;
     font-weight: bold;
     font-size: 15px;
     padding: 15px 15px ;
   }
   .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.617);
+    background-color: white;
     opacity: 100%;
-    padding: 15px;
+    padding: 10px;
     font-size: 20px;
+    color: black;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .nav-links:hover{
