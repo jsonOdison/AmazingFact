@@ -124,6 +124,7 @@
   display: grid;
   grid-template-column: repeat(5, 1fr);
 }
+
 .card .img-container {
   width: 230px;
   height: 100%;
