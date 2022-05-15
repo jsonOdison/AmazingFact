@@ -93,6 +93,69 @@ body{
     margin: 0 auto;
     background-color: #EBEBEB;
 }
+nav {
+    display: flex;
+    margin:0px;
+    padding: 0%;
+    justify-content: space-around; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background:linear-gradient(100deg,rgb(3, 118, 67),rgb(0, 71, 76));
+    font-family: 'Robotic', sans-serif;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .heading {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+  }
+  .heading:hover{
+     color: rgb(255, 255, 255);
+     opacity: 65%;
+     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+     padding: auto;
+  }
+  .nav-links {
+    font-size: 30px;
+    display:flex;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color:whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+    letter-spacing:0;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 15px ;
+  }
+  .nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.617);
+    opacity: 100%;
+    padding: 20px;
+    font-size: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .nav-links:hover{
+      opacity: 100%;
+  }
+  
+  .nav-links li a.active {
+    background-color: #4caf50;
+  }
 
 .header-container {
     margin-bottom: 2%;
