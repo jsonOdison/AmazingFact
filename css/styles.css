@@ -110,7 +110,7 @@ a {
 }
 /* container */
 
-.container{
+/* .container{
     
     
     margin-top: 41%;
@@ -125,7 +125,7 @@ a {
         ;
     grid-gap: 50px;
         background-color: #fff;
-}
+} */
 
 /* Header */
 
@@ -190,18 +190,21 @@ a {
     }
 }
 
-
+/* Content Container */
 .container_ci_content {
-    border-bottom: solid 4px #adcff2;
+
     height:80vh;
-    background-color: #d4e5f6;
+    background-color: #d4e5f6; 
 }
 
+
+/* Cards */
 .articles {
     background: linear-gradient(hsl(233, 26%, 24%) ,hsl(0, 0%, 0%));
     position: relative;
     left: 10%;
    top:10%;
+   border-bottom: solid lightblue 4px;
     }
     
     .article
@@ -260,3 +263,9 @@ a {
             font-size: 0.8125rem;
         }
     
+/* Cards 3 in one */
+        .container_ci_content_gl{
+            display: grid;
+            grid:
+        'article1 article2 article3';
+        }
