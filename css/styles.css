@@ -38,11 +38,11 @@
 }
 
     
-* {
+/* * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-}
+    box-sizing: border-box;
+} */
 
 body {
     box-sizing:border-box;
@@ -279,3 +279,59 @@ a {
             font-size: 0.8125rem;
         }
     
+/*//////////////////////////////////////////////////// Card main Content ///////////////////////////////////////////////////*/
+
+.heading-container{
+    background-color: #afc9e4;
+    margin-bottom: 15px;
+}
+
+.body-container{
+    margin: 0 7%;
+    width: 100%;
+}
+
+.float-left-container{
+    background-color: #afc9e4;
+    width: 74%;
+    display: inline-flex;
+    /* height: 100vh; */
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.float-right-container{
+    background-color: #afc9e4;
+    width:25%;
+    float: right;
+    /* overflow:auto; */
+    /* margin-bottom: 15px; */
+}
+
+.fact-container{
+    /* height:15px; */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.fact-image{
+    height: 75px;
+    width: 75px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.fact-text{
+    display: inline-flex;
+    text-align: justify;
+}
+
+.pic-main-content{
+    width: 100%;
+}
+
+.right-content-container{
+    background-color: #afc9e4;
+    height:150px;
+    margin-bottom: 15px;
+}
