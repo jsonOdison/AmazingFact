@@ -144,12 +144,12 @@ nav {
 
 .f-sticky{
     position: sticky;
-    top: 120px;
+    top: 100px;
 }
 
 .t-sticky{
     position: sticky;
-    top: 290px;
+    top: 270px;
 }
 
 .fact-container{
@@ -236,7 +236,7 @@ nav {
 }
 
 .fact-article-container img{
-    width: 67%;
+    width: 100%;
     border-radius: 10px;
     margin: 0 0 20px 70px;
     border-radius: 10px;
@@ -317,7 +317,7 @@ p{
 }
 .t-text-container{
    
-    width: 74%;
+    width: 68%;
     display: inline-block;
     vertical-align: middle;
 }
@@ -386,7 +386,7 @@ section {
 }
 
 .footer-distributed .footer-company-name{
-  color:  #222;
+  color:  #92999f;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
