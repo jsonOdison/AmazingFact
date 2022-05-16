@@ -67,6 +67,7 @@
     width: 100vw;
     height:100vh;
     max-width: 100%;
+    filter:brightness(90%);
 }
 
 .hero-h1-content {
@@ -145,7 +146,9 @@ h2 {
   color: #555;
 }
 h1 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+  font-weight: 400 !important;
+  line-height: 100%;
 }
 .card-content  {
   border-top: 1px solid #cdcdcd;
@@ -179,4 +182,20 @@ h1 {
   border-top: 1px solid #cdcdcd;
   font-weight: 700;
   color: #555;
+}
+h2 {
+  margin-left:20px;
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0;
+}
+.break-column {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.card-container-row{
+  flex-direction: column;
 }

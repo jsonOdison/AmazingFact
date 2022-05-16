@@ -46,7 +46,7 @@
 
 body {
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Quicksand,Arial, Helvetica, sans-serif;
     color: var(--dark);
     background-color: rgb(255, 255, 255);
   
@@ -141,12 +141,12 @@ nav {
     position: relative;
 }
 h1 {
-    font-size: 50px;
+    font-size: 38px;
     margin-bottom: 0;
-    font-family: "Noto Sans", sans-serif;
+    font-family: sans-serif,"Noto Sans", sans-serif;
 }
 h3{
-    font-family: "Noto Sans", sans-serif;
+    font-family: sans-serif,"Noto Sans", sans-serif;
     color: #50c6db;
 }
 /* end of header container */
@@ -335,4 +335,8 @@ a {
 }
 .container::after {
     margin-bottom: 30px;
+}
+
+.card-h2 {
+    margin:0px;
 }
