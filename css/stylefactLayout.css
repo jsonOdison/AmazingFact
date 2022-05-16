@@ -321,6 +321,10 @@ p{
     display: inline-block;
     vertical-align: middle;
 }
+
+.right-content-container-item a{
+  text-decoration: none;
+}
 footer {
   font-family: Open Sans;
 }
