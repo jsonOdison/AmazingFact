@@ -148,7 +148,7 @@ h2 {
 h1 {
   margin-bottom: 0 !important;
   font-weight: 400 !important;
-  line-height: 100%;
+  line-height: 100% !important;
 }
 .card-content  {
   border-top: 1px solid #cdcdcd;
