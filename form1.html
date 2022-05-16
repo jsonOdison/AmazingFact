@@ -1,52 +1,124 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
-<body>
-<link rel="stylesheet" href="mystyle.css">
-<img src="the fact.jpg" alt="the fact" width="950" height="100">
-<h1><b>Contact us<b></h1>
-<div class="simp">
-</div>
-<div class="container">
-<p>You can find the answer to some commom question on our FAQ page.</p>
-<p>If you can't find your answer there, please feel free to contact us using the form below, and we'll get back to you as soon as possible</p>
-<p><b><i>If you would like to submit a guest post or become an author for The Fact Site, please fill out the form on our Write For Us page</i></b></p>
-
-<form>
-  <label for="fname">Name*</label><br/>
-  <input type="text" id="fname" name="fname" placeholder="Your first name">
-  <input type="text" id="lname" name="lname" placeholder="Your last name"><br/><br/>
-  <label for="EMAIL">Email Address*</label><br/>
-  <input type="text" id="EMAIL" name="EMAIL" placeholder="Email Address"><br/><br/>
-  
-  
-  <label for="Subject">Subject*</label><br/>
-  <select id="subject" name="Choose subject"><br/>
-      <option value="I want to request facts about..">I want to request facts about..</option>
-      <option value="i want to be removed from notication">I want to be removed from notications.</option>
-      <option value="one of your facts is incorrect">One of your facts is incorrect..</option>
-	  <option value="i have a general question to ask">I have a general question to ask.</option>
-    </select><br/><br/>
-	<label for="Message*">Message*</label><br/>
-    <textarea id="Message" name="Message" style="width:500px; height:100px;"></textarea><br/><br/>
-	<input type="checkbox" id="agreement" name="agreement" value="website">
-    <label for="Agreement"> I consent to having this website store my submitted information so they can respond to my inquiry</label><br/></br/>
-    <input type="checkbox" id="Subscribe" name="Subscribe" value="newsletter">
-    <label for="Subscribe">Subscribe to Newsletter</label><br/><br/>
-    <div class="send">
-    <input type="Submit" value="Send message"></a></div>
-</form>
-
-<p class="email">Your email will not be passed on to anyone else. It's for use only to contact you regarding your message<p><br/><br/></div>
-<h2>NEWSLETTER</H2>
-<div class="container">
-<form>
-  <input type="text" id="fname" name="fname" placeholder="First Name"><br/>
-  <input type="text" id="lname" name=lname" placeholder="Last name"><br/>
-  <input type="text" id="EMAIL" name="EMAIL" placeholder="Email"><br/><br/>
-  <input type="Submit" value="Subscribe">
-</form>
-</div>
-</body>
+  <title>Contact us form</title>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/form.css">
+<body>
+</head>
+
+  <nav id="nav"> 
+    <div class="heading">
+
+    <h4>Amazing Fact Of India</h4>
+
+  </div>
+
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="#" class="active">Contact Us</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+    <div class="header-container"> 
+        <div class="header-inside-container">
+            <h1>Give us your feedback</h1>
+        </div>
+    </div>
+  <div class="container_form">  
+    <form id="contact" action="" method="post">
+      <h3 align='center'>Contact us</h3>
+     
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <select id="subject" name="Choose subject"><br/>
+          <option value="I want to request facts about..">I want to request facts about..</option>
+          <option value="i want to be removed from notication">I want to be removed from notications.</option>
+          <option value="one of your facts is incorrect">One of your facts is incorrect..</option>
+        <option value="i have a general question to ask">I have a general question to ask.</option>
+        </select>      </fieldset>
+      
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" id="Subscribe" name="Subscribe" value="newsletter">
+        <label for="Subscribe">Subscribe to Newsletter</label><br/><br/>      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Amazing Facts About India</h3>
+
+      <p class="footer-links">
+        <a href="index.html" class="link-1">Home</a>
+        
+        <a href="gallery.html">Gallery</a>
+      
+        <a href="#">Contact Us</a>
+
+        <a href="about.html">About Us</a>
+      </p
+
+      <p class="footer-company-name"> Amazing Facts About India © 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Assam DonBosco University, Azara</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>6009073925</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">amazingfactsaboutindia@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Amazing Facts About India is a website with a bunch of facts created by Group 1 studens of MCA 2<sup>nd</sup> semester.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-reddit"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
 </html>
