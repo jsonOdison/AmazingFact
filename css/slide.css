@@ -274,3 +274,12 @@ h2 {
   background-size: cover;
   background-position: center center;
 }
+.card .img-container-8 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/F7D6/production/_99364436_manwithahelmet_001_nationalmuseumnewdelhi.jpg');
+  background-size: cover;
+  background-position: center center;
+}
