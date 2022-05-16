@@ -162,9 +162,13 @@ h1 {
   border-radius: 5px;
   height:100%;
   padding:1rem;
-  background-color: #cdcdcd;
-
+  background-color: #fff;
+  max-width: 800px;
+  box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
+  border-radius: 3px;
+  display: grid;
 }
+
 
 .card-container {
   flex-direction: column;
@@ -198,4 +202,75 @@ h2 {
 
 .card-container-row{
   flex-direction: column;
+}
+
+.card .img-container-1 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background-image: url('../images/factsani/panda.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+ .card .img-container-2 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('../images/factsCeleb/Alia_Bhatt.png');
+  background-size: cover;
+  background-position: center center;
+}
+.card .img-container-3 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('../images/historyfact/c2\).jfif');
+  background-size: cover;
+  background-position: center center;
+}
+
+.card1-img {
+  background: url('../images/factFood/cy1.jpg');
+}
+
+.card .img-container-4 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('../images/historyfact/c2\).jfif');
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .img-container-5 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('../images/gallery/5.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .img-container-6 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('../images/historyfact/1history.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.card .img-container-7 {
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background: url('../images/placesfact/2.jpg');
+  background-size: cover;
+  background-position: center center;
 }
